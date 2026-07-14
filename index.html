@@ -1,106 +1,221 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>elazhar.sch.id</title>
+<title>Website Sedang Dalam Pengembangan</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        html,
-        body{
-            width:100%;
-            height:100%;
-        }
+<style>
 
-        body{
-            display:flex;
-            justify-content:center;
-            align-items:center;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-            background:#ffffff;
-            background:radial-gradient(circle at center,
-                    #ffffff 0%,
-                    #f7f7f7 70%,
-                    #ececec 100%);
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+overflow:hidden;
+color:#fff;
+}
 
-            font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-            color:#222;
-        }
+body::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#60a5fa;
+border-radius:50%;
+top:-150px;
+left:-150px;
+opacity:.15;
+filter:blur(40px);
+}
 
-        main{
-            width:90%;
-            max-width:1200px;
-            text-align:center;
-            padding:40px;
-        }
+body::after{
+content:"";
+position:absolute;
+width:450px;
+height:450px;
+background:#38bdf8;
+border-radius:50%;
+bottom:-150px;
+right:-150px;
+opacity:.15;
+filter:blur(50px);
+}
 
-        h1{
-            font-size:5rem;
-            font-weight:700;
-            line-height:1.1;
-            letter-spacing:-2px;
-        }
+.container{
+position:relative;
+z-index:2;
+max-width:700px;
+width:90%;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:50px;
+border-radius:20px;
+text-align:center;
+border:1px solid rgba(255,255,255,.2);
+box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
 
-        h1::after{
-            content:"";
-            display:block;
-            width:520px;
-            max-width:100%;
-            height:14px;
-            margin:30px auto;
+.logo{
+font-size:34px;
+font-weight:700;
+margin-bottom:15px;
+}
 
-            background:
-                repeating-linear-gradient(
-                    45deg,
-                    #ffe800,
-                    #ffe800 14px,
-                    #222 14px,
-                    #222 28px
-                );
-        }
+.logo span{
+color:#ffd54f;
+}
 
-        p{
-            font-size:2rem;
-            color:#555;
-            margin-top:10px;
-        }
+h1{
+font-size:42px;
+margin-bottom:15px;
+}
 
-        @media (max-width:768px){
+p{
+font-size:18px;
+opacity:.9;
+line-height:1.7;
+margin-bottom:30px;
+}
 
-            h1{
-                font-size:3rem;
-                letter-spacing:0;
-            }
+.loader{
+width:100%;
+height:8px;
+background:rgba(255,255,255,.15);
+border-radius:30px;
+overflow:hidden;
+margin-bottom:35px;
+}
 
-            p{
-                font-size:1.25rem;
-            }
+.loader span{
+display:block;
+height:100%;
+width:35%;
+background:#ffd54f;
+animation:loading 2s infinite;
+}
 
-            h1::after{
-                width:280px;
-                height:10px;
-            }
-        }
-    </style>
+@keyframes loading{
+
+0%{
+margin-left:-35%;
+}
+
+100%{
+margin-left:100%;
+}
+
+}
+
+.social{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.social a{
+width:50px;
+height:50px;
+border-radius:50%;
+background:rgba(255,255,255,.12);
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+color:#fff;
+font-size:20px;
+transition:.3s;
+}
+
+.social a:hover{
+background:#ffd54f;
+color:#000;
+transform:translateY(-5px);
+}
+
+footer{
+margin-top:35px;
+font-size:14px;
+opacity:.7;
+}
+
+@media(max-width:600px){
+
+.container{
+padding:35px 25px;
+}
+
+h1{
+font-size:30px;
+}
+
+p{
+font-size:16px;
+}
+
+.logo{
+font-size:28px;
+}
+
+}
+
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
-
 <body>
 
-    <main>
+<div class="container">
 
-        <h1>elazhar.sch.id</h1>
+<div class="logo">
+ELAZHAR <span>INSAN CENDEKIA</span>
+</div>
 
-        <p>Our website is under construction.</p>
+<h1>🚧 Website Sedang Dalam Pengembangan</h1>
 
-    </main>
+<p>
+Terima kasih telah berkunjung.<br>
+Website kami sedang diperbarui agar memberikan layanan yang lebih baik.<br><br>
+
+Silakan kunjungi kembali dalam waktu dekat.
+</p>
+
+<div class="loader">
+<span></span>
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+<a href="https://wa.me/6281234567890"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+<footer>
+
+© 2026 Elazhar Insan Cendekia
+
+</footer>
+
+</div>
 
 </body>
 </html>
