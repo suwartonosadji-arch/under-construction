@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,190 +9,31 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
-overflow:hidden;
-color:#fff;
-}
-
-body::before{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:#60a5fa;
-border-radius:50%;
-top:-150px;
-left:-150px;
-opacity:.15;
-filter:blur(40px);
-}
-
-body::after{
-content:"";
-position:absolute;
-width:450px;
-height:450px;
-background:#38bdf8;
-border-radius:50%;
-bottom:-150px;
-right:-150px;
-opacity:.15;
-filter:blur(50px);
-}
-
-.container{
-position:relative;
-z-index:2;
-max-width:700px;
-width:90%;
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(12px);
-padding:50px;
-border-radius:20px;
-text-align:center;
-border:1px solid rgba(255,255,255,.2);
-box-shadow:0 20px 60px rgba(0,0,0,.3);
-}
-
-.logo{
-font-size:34px;
-font-weight:700;
-margin-bottom:15px;
-}
-
-.logo span{
-color:#ffd54f;
-}
-
-h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-p{
-font-size:18px;
-opacity:.9;
-line-height:1.7;
-margin-bottom:30px;
-}
-
-.loader{
-width:100%;
-height:8px;
-background:rgba(255,255,255,.15);
-border-radius:30px;
-overflow:hidden;
-margin-bottom:35px;
-}
-
-.loader span{
-display:block;
-height:100%;
-width:35%;
-background:#ffd54f;
-animation:loading 2s infinite;
-}
-
-@keyframes loading{
-
-0%{
-margin-left:-35%;
-}
-
-100%{
-margin-left:100%;
-}
-
-}
-
-.social{
-display:flex;
-justify-content:center;
-gap:15px;
-margin-top:20px;
-}
-
-.social a{
-width:50px;
-height:50px;
-border-radius:50%;
-background:rgba(255,255,255,.12);
-display:flex;
-justify-content:center;
-align-items:center;
-text-decoration:none;
-color:#fff;
-font-size:20px;
-transition:.3s;
-}
-
-.social a:hover{
-background:#ffd54f;
-color:#000;
-transform:translateY(-5px);
-}
-
-footer{
-margin-top:35px;
-font-size:14px;
-opacity:.7;
-}
-
-@media(max-width:600px){
-
-.container{
-padding:35px 25px;
-}
-
-h1{
-font-size:30px;
-}
-
-p{
-font-size:16px;
-}
-
-.logo{
-font-size:28px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="assets/css/style.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
+
 <body>
 
 <div class="container">
 
 <div class="logo">
-    <img src="logo.png" alt="Logo El-Azhar Insan Cendekia">
-    <h2>EL-AZHAR <span>INSAN CENDEKIA</span></h2>
+<img src="assets/img/logo.png" alt="Logo El-Azhar Insan Cendekia">
+
 </div>
 
 <h1>🚧 Website Sedang Dalam Pengembangan</h1>
 
 <p>
+
 Terima kasih telah berkunjung.<br>
+
 Website kami sedang diperbarui agar memberikan layanan yang lebih baik.<br><br>
 
 Silakan kunjungi kembali dalam waktu dekat.
+
 </p>
 
 <div class="loader">
@@ -199,14 +41,26 @@ Silakan kunjungi kembali dalam waktu dekat.
 </div>
 
 <div class="social">
-<a href="https://www.tiktok.com/@elazharinsancendekia" target="_blank"><i class="fab fa-tiktok"></i>
-<a href="https://www.facebook.com/profile.php?id=61591539947105&locale=id_ID"><i class="fab fa-facebook-f"></i></a>
 
-<a href="https://www.instagram.com/elazharinsancendekia"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@elazharinsancendekia" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
 
-<a href="https://www.youtube.com/@elazharinsancendekia"><i class="fab fa-youtube"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61591539947105&locale=id_ID" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
 
-<a href="https://wa.me/6285199696796"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.instagram.com/elazharinsancendekia" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/@elazharinsancendekia" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://wa.me/6285199696796" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </div>
 
